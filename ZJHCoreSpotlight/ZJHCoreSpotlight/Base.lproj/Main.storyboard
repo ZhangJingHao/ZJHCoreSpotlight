@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R9W-8R-JRL">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="k5A-4C-X6c">
+            <objects>
+                <navigationController id="R9W-8R-JRL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="780-DF-PX1">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OoV-QA-5XP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOj-bQ-xGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1263" y="-14"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLW-tU-e74">
+                                <rect key="frame" x="68.5" y="163" width="183" height="49"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="d4g-qL-Uhj"/>
+                                    <constraint firstAttribute="height" constant="49" id="dDj-AP-QYU"/>
+                                </constraints>
+                                <state key="normal" title="添加索引"/>
+                                <connections>
+                                    <action selector="setSearchContent" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVf-q5-juA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-3P-qaQ">
+                                <rect key="frame" x="68" y="248" width="183" height="49"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="4K7-ar-huo"/>
+                                    <constraint firstAttribute="width" constant="183" id="Btq-JW-d97"/>
+                                    <constraint firstAttribute="height" constant="49" id="Uk8-Nd-Cms"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="183" id="xTy-QP-R3v"/>
+                                </constraints>
+                                <state key="normal" title="删除索引"/>
+                                <connections>
+                                    <action selector="deleteSearchItem" destination="BYZ-38-t0r" eventType="touchUpInside" id="01t-Cu-HOl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zLW-tU-e74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Cc-dM-41A"/>
+                            <constraint firstItem="Q9w-3P-qaQ" firstAttribute="top" secondItem="zLW-tU-e74" secondAttribute="bottom" constant="36" id="M4v-gd-y3B"/>
+                            <constraint firstItem="Q9w-3P-qaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJp-vk-RfC"/>
+                            <constraint firstItem="zLW-tU-e74" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="srw-K2-yCo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="4QZ-iZ-GBa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434.39999999999998" y="-35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>
